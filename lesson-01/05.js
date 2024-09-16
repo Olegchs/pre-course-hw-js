@@ -11,3 +11,4 @@ switch (true) {
         console.log("50 на 50");
         break;
 }
+//go
