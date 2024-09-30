@@ -3,3 +3,5 @@ const doArrow = (value) => {
 };
 
 doArrow('Передай 5');
+
+//test
