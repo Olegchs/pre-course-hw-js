@@ -7,11 +7,9 @@ let passportMarried = {
     }
 };
 
-// Создаем новый объект passportMarried2 с добавленным свойством married
-let passportMarried2 = {
-    ...passportMarried,
-    married: true
-};
+// Создаем глубокую копию объекта passportMarried
+let passportMarried2 = structuredClone(passportMarried);
+passportMarried2.married = true; // Добавляем married: true
 
 // Проверяем значения в консоли
 console.log(passportMarried);   // Должно вывести оригинальный объект
