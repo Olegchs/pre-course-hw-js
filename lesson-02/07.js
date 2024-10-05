@@ -7,7 +7,7 @@ let passportMarried = {
     }
 };
 
-// Создаем глубокую копию объекта passportMarried и добавляем married: true
+// Создаем новый объект passportMarried2 с добавленным свойством married
 let passportMarried2 = {
     ...passportMarried,
     married: true
