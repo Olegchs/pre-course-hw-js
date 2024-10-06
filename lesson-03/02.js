@@ -1,11 +1,9 @@
 const words = ["яблоко", "банан", "апельсин", "манго", "киви"];
-let flag = false
-
+let n1 = -1
 for (i of words) {
-    if (i === "апельсин") {
-        console.log(words.indexOf("апельсин"))
-        flag = true
-        break
+    if (i === 'апельсин') {
+        n1 = words.indexOf('апельсин')
     }
 }
-console.log(flag === false ? "Придется поискать в другом магазине..." : "")
+
+console.log(n1 >= 0 ? "Ура! нашел" : "Придется поискать в другом магазине…")
