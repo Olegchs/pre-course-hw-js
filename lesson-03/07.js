@@ -5,9 +5,13 @@ const numbers = [
 ];
 
 // Удаляем нечетные числа
-const evenNumbers = numbers.map(innerArray =>
-    innerArray.filter(num => num % 2 === 0)
-);
+numbers.forEach(innerArray => {
+    for (let i = innerArray.length - 1; i >= 0; i--) {
+        if (innerArray[i] % 2 !== 0) {
+            innerArray.splice(i, 1);
+        }
+    }
+});
 
 // Выводим результат в консоль
-console.log(evenNumbers);
+console.log(numbers);
