@@ -8,4 +8,4 @@ for (i of words) {
         break
     }
 }
-console.log(flag === false ? "Придется поискать в другом магазине" : "")
+console.log(flag === false ? "Придется поискать в другом магазине..." : "")
